@@ -97,30 +97,30 @@ def nextBoardState(initBoard)
 	return finalBoard
 end
 
-# userInput = 0
-# while userInput == 0
-# 	puts "Select board size: "
-# 	puts "A. 10x10"
-# 	puts "B. 20x20"
-# 	puts "C. 30x30"
-# 	puts "D. 40x40"
-# 	userInput = gets.chomp.downcase
-# end
+userInput = 0
+while userInput == 0
+	puts "Select board size: "
+	puts "A. 10x10"
+	puts "B. 20x20"
+	puts "C. 30x30"
+	puts "D. 40x40"
+	userInput = gets.chomp.downcase
+end
 
-# case userInput
-# 	when 'a'
-# 		init_board = randomBoard(10,10)
-# 	when 'b'
-# 		init_board = randomBoard(20,20)	
-# 	when 'c'
-# 		init_board = randomBoard(30,30)
-# 	when 'd'
-# 		init_board = randomBoard(40,40)
-# end
+case userInput
+	when 'a'
+		init_board = randomBoard(10,10)
+	when 'b'
+		init_board = randomBoard(20,20)	
+	when 'c'
+		init_board = randomBoard(30,30)
+	when 'd'
+		init_board = randomBoard(40,40)
+end
 
-# printBoard(init_board)
-# while true
-# 	init_board = nextBoardState(init_board)
-# 	printBoard(init_board)
-# end
+printBoard(init_board)
+while true
+	init_board = nextBoardState(init_board)
+	printBoard(init_board)
+end
 
